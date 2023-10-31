@@ -1,2 +1,2 @@
 #!/user/bin
-python ./${PYFILE}
+python $PYFILE
