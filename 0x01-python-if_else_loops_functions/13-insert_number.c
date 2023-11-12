@@ -2,8 +2,9 @@
 #include <stdlib.h>
 #include "lists.h"
 /**
- * free_listint - frees a listint_t list
+ * insert_node - frees a listint_t list
  * @head: pointer to list to be freed
+ * @number: number to be inserted
  * Return: void
  */
 listint_t *insert_node(listint_t **head, int number)
