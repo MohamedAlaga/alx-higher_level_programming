@@ -5,7 +5,7 @@
  * insert_node - frees a listint_t list
  * @head: pointer to list to be freed
  * @number: number to be inserted
- * Return: void
+ * Return:  the address of the new node, or NULL if it failed
  */
 listint_t *insert_node(listint_t **head, int number)
 {
