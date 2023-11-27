@@ -91,7 +91,8 @@ class Rectangle:
             return 0
         else:
             return (self.width + self.height) * 2
-    def __str__(self) : 
+
+    def __str__(self):
         """Returns a string representation of the rectangle with the
         character
         #
