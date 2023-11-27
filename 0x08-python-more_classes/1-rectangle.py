@@ -9,10 +9,6 @@ class Rectangle:
         width (int): width of the rectangle.
         height (int): height of the rectangle.
     """
-
-    __width = None
-    __height = None
-
     @property
     def width(self):
         """Width retriver.
@@ -74,5 +70,5 @@ class Rectangle:
             width (int, optional): width of rectangle. Defaults to 0.
             height (int, optional): height of rectangle. Defaults to 0.
         """
-        self.__width = width
-        self.__height = height
+        self.width = width
+        self.height = height
