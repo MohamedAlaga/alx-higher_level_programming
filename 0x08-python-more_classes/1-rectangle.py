@@ -3,17 +3,34 @@
 
 
 class Rectangle:
-    """defines rectangle class"""
+    """defines rectangle class
+    
+    Attributes:
+        width (int): width of the rectangle.
+        height (int): height of the rectangle.
+    """
 
     __width = None
     __height = None
 
     def width(self):
-        """getter for width attribute"""
+        """Width retriver.
+
+        Returns:
+            int: the width of the rectangle.
+        """
         return self.__width
 
     def width(self, value):
-        """setter for width attribute"""
+        """Property setter for width of rectangle.
+
+        Args:
+            value (int): width of the rectangle.
+
+        Raises:
+            TypeError: if width is not an integer.
+            ValueError: if width is less than 0.
+        """
         if not isinstance(value, int):
             raise TypeError("width must be an integer")
         elif value < 0:
@@ -22,11 +39,23 @@ class Rectangle:
             self.__width = value
 
     def height(self):
-        """getter for height attribute"""
+        """Height retriver.
+
+        Returns:
+            int: the height of the rectangle.
+        """
         return self.__height
 
     def height(self, value):
-        """setter for height attribute"""
+        """Property setter for height of recyangle.
+
+        Args:
+            value (int): height of the rectangle.
+
+        Raises:
+            TypeError: if height is not an integer.
+            ValueError: if height is less than 0.
+        """
         if not isinstance(value, int):
             raise TypeError("height must be an integer")
         elif value < 0:
@@ -35,6 +64,11 @@ class Rectangle:
             self.__height = value
 
     def __init__(self, width=0, height=0):
-        """initializes the instance"""
+        """Creates new instances of Rectangle.
+
+        Args:
+            width (int, optional): width of rectangle. Defaults to 0.
+            height (int, optional): height of rectangle. Defaults to 0.
+        """
         self.__width = width
         self.__height = height
