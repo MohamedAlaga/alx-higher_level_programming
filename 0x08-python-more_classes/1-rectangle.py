@@ -4,7 +4,7 @@
 
 class Rectangle:
     """defines rectangle class
-    
+
     Attributes:
         width (int): width of the rectangle.
         height (int): height of the rectangle.
@@ -13,6 +13,7 @@ class Rectangle:
     __width = None
     __height = None
 
+    @property
     def width(self):
         """Width retriver.
 
@@ -21,6 +22,7 @@ class Rectangle:
         """
         return self.__width
 
+    @width.setter
     def width(self, value):
         """Property setter for width of rectangle.
 
@@ -38,6 +40,7 @@ class Rectangle:
         else:
             self.__width = value
 
+    @property
     def height(self):
         """Height retriver.
 
@@ -46,6 +49,7 @@ class Rectangle:
         """
         return self.__height
 
+    @height.setter
     def height(self, value):
         """Property setter for height of recyangle.
 
