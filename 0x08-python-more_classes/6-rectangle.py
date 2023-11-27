@@ -74,7 +74,7 @@ class Rectangle:
         """
         self.width = width
         self.height = height
-        type(self).number_of_instances += 1
+        Rectangle.number_of_instances += 1
 
     def area(self):
         """Calculates the area of a rectangle.
@@ -114,3 +114,4 @@ class Rectangle:
     def __del__(self):
         """Prints a message when an instance of Rectangle is deleted."""
         print("Bye rectangle...")
+        Rectangle.number_of_instances -= 1
