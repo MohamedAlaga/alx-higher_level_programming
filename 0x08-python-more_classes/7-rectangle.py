@@ -103,8 +103,8 @@ class Rectangle:
         """
         if self.__width == 0 or self.__height == 0:
             return ""
-            text = [str(self.print_symbol) * self.__width]
         else:
+            text = [str(self.print_symbol) * self.__width]
             return "\n".join( text * self.__height)
 
     def __repr__(self):
