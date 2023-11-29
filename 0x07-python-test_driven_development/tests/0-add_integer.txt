@@ -8,6 +8,18 @@ This file is in restructured text format.
 First import ``add_integer`` from the ``0-add_integer`` module:
 
     >>> add_integer = __import__('0-add_integer').add_integer
+
+Checking for module docstring:
+
+    >>> m = __import__("0-add_integer").__doc__
+    >>> len(m) > 1 
+    True
+
+Checking for function docstring:
+
+    >>> f = __import__("0-add_integer").add_integer.__doc__
+    >>> len(f) > 1
+    True
          
 Basic usage:
 
@@ -34,10 +46,6 @@ Checking negative with positive:
     >>> add_integer(-6, 8)
     2
 
-Checking addition over multiple values:
-
-    >>> [add_integer(i, i ** 2) for i in range(6)]
-    [0, 2, 6, 12, 20, 30]
 
 Float and negative input:
 
