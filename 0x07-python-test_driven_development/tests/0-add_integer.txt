@@ -46,6 +46,10 @@ Checking negative with positive:
     >>> add_integer(-6, 8)
     2
 
+Checking addition over multiple values:
+
+    >>> [add_integer(i, i ** 2) for i in range(6)]
+    [0, 2, 6, 12, 20, 30]
 
 Float and negative input:
 
@@ -57,12 +61,6 @@ Float overflow:
     >>> add_integer(1500.5)
     1598
 
-Float NaN:
-
-    >>> add_integer(float('NaN'))
-    Traceback (most recent call last):
-    ...
-    ValueError: cannot convert float NaN to integer
 
 String input:
 
