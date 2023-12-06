@@ -42,6 +42,7 @@ clear obj data
     >>> obj.clear()
     >>> print(obj)
     []
+
 use the function with 1 arguments
     >>> obj.print_sorted([5, 3, 2, 7, 9, 1])
     Traceback (most recent call last):
