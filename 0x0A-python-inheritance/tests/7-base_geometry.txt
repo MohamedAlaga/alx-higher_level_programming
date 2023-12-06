@@ -1,25 +1,25 @@
 this is `` 7-base_geometry test`` module 
 ========================================
 first import the module
-    >>> BaseGeometry = __import__(7-base_geometry).BaseGeometry
+    >>> BaseGeometry = __import__("7-base_geometry").BaseGeometry
 
 check module docstring
-    >>> m = __import__(7-base_geometry).__doc__
+    >>> m = __import__("7-base_geometry").__doc__
     >>> len(m) > 1
     True
 
 check class docstring
-    >>> l  =__import__(7-base_geometry).BaseGeometry.__doc__
+    >>> l  =__import__("7-base_geometry").BaseGeometry.__doc__
     >>> len(l) > 1
     True
 
 check function area docstring 
-    >>> n = __import__(7-base_geometry).BaseGeometry.area.__doc__
+    >>> n = __import__("7-base_geometry").BaseGeometry.area.__doc__
     >>> len(n) > 1
     True
 
 check function integer_validator docstring
-    >>> n = __import__(7-base_geometry).BaseGeometry.integer_validator.__doc__
+    >>> n = __import__("7-base_geometry").BaseGeometry.integer_validator.__doc__
     >>> len(n) > 1
 
 create object of BaseGeometry
