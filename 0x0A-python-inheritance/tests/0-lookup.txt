@@ -7,17 +7,17 @@ import 'lookup' from 0-lookup
 
     >>> lookup = __import__('0-lookup').lookup
 
---------------------------------
+
 check for module docstring
     >>> m =  __import__('0-lookup').__doc__
     >>> if m > 1
     True
---------------------------------
+
 check for function docstring
     >>> l = __import__('0-lookup').lookup.__doc__
     >>> len(m) > 1
     true
---------------------------------
+
 basic usage
     >>> class MyClass1(object):
     >>>     pass
