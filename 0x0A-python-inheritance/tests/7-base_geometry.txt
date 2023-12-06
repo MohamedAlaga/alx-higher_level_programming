@@ -14,12 +14,12 @@ check class docstring
     True
 
 check function area docstring 
-    >>> n = __import__(7-base_geometry).base_geometry.area.__doc__
+    >>> n = __import__(7-base_geometry).BaseGeometry.area.__doc__
     >>> len(n) > 1
     True
 
 check function integer_validator docstring
-    >>> n = __import__(7-base_geometry).base_geometry.integer_validator.__doc__
+    >>> n = __import__(7-base_geometry).BaseGeometry.integer_validator.__doc__
     >>> len(n) > 1
 
 create object of BaseGeometry
