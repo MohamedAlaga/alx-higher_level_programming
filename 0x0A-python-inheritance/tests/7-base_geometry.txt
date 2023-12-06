@@ -5,7 +5,7 @@ first import the module
 
 check module docstring
     >>> m = __import__(7-base_geometry).__doc__
-    >>>len(m) > 1
+    >>> len(m) > 1
     True
 
 check class docstring
