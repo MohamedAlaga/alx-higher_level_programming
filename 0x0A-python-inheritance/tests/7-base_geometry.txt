@@ -31,22 +31,22 @@ use area function
     >>> obj = BaseGeometry()
     >>> obj.area()
     Traceback (most recent call last):
-    [Exception] area() is not implemented
+    Exception: area() is not implemented
 
 use integer_validator with nonint argument
     >>> obj = BaseGeometry()
     >>> obj.integer_validator("name", "John")
     Traceback (most recent call last):
-    [TypeError] name must be an integer
+    TypeError: name must be an integer
 
 use integer_validator with int = 0
     >>> obj = BaseGeometry()
     >>> obj.integer_validator("name", 0)
     Traceback (most recent call last):
-    [ValueError] name must be greater than 0
+    ValueError: name must be greater than 0
 
 use integer_validator int less than 0
     >>> obj = BaseGeometry()
     >>> obj.integer_validator("name", -4)
     Traceback (most recent call last):
-    [ValueError] name must be greater than 0
+    ValueError: name must be greater than 0
