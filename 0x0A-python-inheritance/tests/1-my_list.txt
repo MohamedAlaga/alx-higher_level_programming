@@ -2,7 +2,7 @@ the ``1-my_list test`` module
 ==============================
 
 First import the module
-    >>> my_list = __import__('1-my_list').MyList
+    >>> MyList = __import__('1-my_list').MyList
 
 check for module docstring
     >>> m = __import__('1-my_list').__doc__
@@ -25,6 +25,7 @@ create class object
     True
 
 append data ints to object
+    >>> obj = MyList()
     >>> obj.append(5)
     >>> obj.append(3)
     >>> obj.append(2)
@@ -35,15 +36,30 @@ append data ints to object
     [5, 3, 2, 7, 9, 1]
 
 use the function print_sorted
+    >>> obj = MyList()
+    >>> obj.append(5)
+    >>> obj.append(3)
+    >>> obj.append(2)
+    >>> obj.append(7)
+    >>> obj.append(9)
+    >>> obj.append(1)
     >>> obj.print_sorted()
     [1, 2, 3, 5, 7, 9]
 
 clear obj data
+    >>> obj = MyList()
+    >>> obj.append(5)
+    >>> obj.append(3)
+    >>> obj.append(2)
+    >>> obj.append(7)
+    >>> obj.append(9)
+    >>> obj.append(1)
     >>> obj.clear()
     >>> print(obj)
     []
 
 use the function with 1 arguments
+    >>> obj = MyList()
     >>> obj.print_sorted([5, 3, 2, 7, 9, 1])
     Traceback (most recent call last):
     TypeError: print_sorted() takes 1 positional argument but 2 were given
