@@ -1,0 +1,48 @@
+this is `` 7-base_geometry test`` module 
+========================================
+first import the module
+    >>> BaseGeometry = __import__(7-base_geometry).BaseGeometry
+
+check module docstring
+    >>> m = __import__(7-base_geometry).__doc__
+    >>>len(m) > 1
+    True
+
+check class docstring
+    >>> l  =__import__(7-base_geometry).BaseGeometry.__doc__
+    >>> len(l) > 1
+    True
+
+check function area docstring 
+    >>> n = __import__(7-base_geometry).base_geometry.area.__doc__
+    >>> len(n) > 1
+    True
+
+check function integer_validator docstring
+    >>> n = __import__(7-base_geometry).base_geometry.integer_validator.__doc__
+    >>> len(n) > 1
+
+create object of BaseGeometry
+    >>> obj = BaseGeometry()
+    >>> type(obj) == BaseGeometry
+    True
+
+use area function
+    >>> obj = BaseGeometry()
+    >>> obj.area()
+    [Exception] area() is not implemented
+
+use integer_validator with nonint argument
+    >>> obj = BaseGeometry()
+    >>> obj.integer_validator("name", "John")
+    [TypeError] name must be an integer
+
+use integer_validator with int = 0
+    >>> obj = BaseGeometry()
+    >>> obj.integer_validator("name", 0)
+    [ValueError] name must be greater than 0
+
+use integer_validator int less than 0
+    >>> obj = BaseGeometry()
+    >>> obj.integer_validator("name", -4)
+    [ValueError] name must be greater than 0
