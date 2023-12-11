@@ -1,4 +1,13 @@
+#!/usr/bin/pyhton3
+"""
+module for base class
+"""
+
+
 class Base:
+    """
+    base class that all next class will inhert from
+    """
     __nb_objects = 0
 
     def __init__(self, id=None):
