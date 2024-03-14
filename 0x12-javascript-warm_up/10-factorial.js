@@ -7,4 +7,4 @@ function fact (a) {
     return (a * fact (a-1));
   }
 }
-console.log(fact(process.argv[2]));
+console.log(fact(Number(process.argv[2])));
