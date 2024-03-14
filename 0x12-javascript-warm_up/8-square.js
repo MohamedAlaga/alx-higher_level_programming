@@ -3,10 +3,11 @@
 if (isNaN(process.argv[2])) {
   console.log('Missing size');
 } else {
+  let char = '*'
   for (let i = 0; i < process.argv[2]; i++) {
     for (let y = 0; y < process.argv[2]; y++) {
-      console.log('*');
+      char += '*'
     }
-    console.log('\n');
+    console.log(char);
   }
 }
