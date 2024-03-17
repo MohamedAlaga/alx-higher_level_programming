@@ -10,7 +10,7 @@ if __name__ == "__main__":
     connection = MySQLdb.connect(host="localhost",
                                  user=argv[1], password=argv[2], db=argv[3])
     cursor = connection.cursor()
-    cursor.execute("SELECT * FROM states ORDER BY states.id WHERE name = 'N%'")
+    cursor.execute("SELECT * FROM states ORDER BY states.id WHERE name like 'N%'")
     data = cursor.fetchall()
     for state in data:
         print(state)
