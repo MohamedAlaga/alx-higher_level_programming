@@ -7,9 +7,9 @@ from sys import argv
 import MySQLdb
 
 if __name__ == "__main__" :
-    connection = MySQLdb.connect(host = "localhost" , user = argv[1] , password = argv[2] , database = argv[3])
+    connection = MySQLdb.connect(host = "localhost" , user = argv[1] , password = argv[2] , db = argv[3])
     cursor = connection.cursor()
-    cursor.execute = """SELECT * FROM states ORDER BY states.id ASC"""
+    cursor.execute ("SELECT * FROM states ORDER BY states.id ASC")
     data = cursor.fetchall()
     for state in data :
         print(state)
