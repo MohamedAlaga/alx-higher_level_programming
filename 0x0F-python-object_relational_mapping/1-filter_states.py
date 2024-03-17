@@ -14,3 +14,5 @@ if __name__ == "__main__":
     data = cursor.fetchall()
     for state in data:
         print(state)
+    cursor.close()
+    connection.close()
