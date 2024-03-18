@@ -16,5 +16,5 @@ if __name__ == "__main__":
     data = cursor.fetchall()
     allcities = []
     for city in data:
-        allcities.append(city)
+        allcities.append(city[0])
     print(", ".join(allcities))
