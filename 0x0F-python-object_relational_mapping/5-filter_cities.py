@@ -14,5 +14,7 @@ if __name__ == "__main__":
                    where states.id = cities.state_id AND\
                     states.name = '{}' ORDER BY cities.id ASC".format(argv[4]))
     data = cursor.fetchall()
-    for state in data:
-        print(str(state))
+    allcities = []
+    for city in data:
+        allcities.append(city)
+    print(", ".join(allcities))
