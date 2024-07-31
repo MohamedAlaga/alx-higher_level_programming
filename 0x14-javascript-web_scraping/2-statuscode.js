@@ -1,7 +1,7 @@
 #!/usr/bin/node
 
-const REQ = require('require');
-REQ(process.argv[2], (error, response, body) => {
+const REQ = require('request');
+REQ(process.argv[2],function (error, response, body){
   if (error) {
     console.log(error);
     return;
