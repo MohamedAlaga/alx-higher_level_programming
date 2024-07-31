@@ -2,7 +2,7 @@
 
 const REQ = require('request');
 const url = process.argv[2];
-REQ (url, function (error, response, body){
+REQ(url, function (error, response, body) {
   if (error) {
     console.log(error);
     return;
